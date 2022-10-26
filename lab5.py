@@ -2,7 +2,9 @@ from cmath import pi
 import numpy as np
 from numpy import interp
 from numpy import pi
-import rospy
+#import rospy
+import roboticstoolbox as rt
+
 import time
 from std_msgs.msg import String
 from sensor_msgs.msg import JointState
@@ -58,6 +60,7 @@ def ConvGra2Q(Gra,Home):
 
     return 0
 
+
 def ConvPosArr2QArr(PosArr):
     [r,c]=PosArr.shape
     QArr=np.zeros([r,c])
@@ -67,6 +70,29 @@ def ConvPosArr2QArr(PosArr):
 
 def mapAn(theta):
     return int(interp(theta,[-150, 150],[0, 1023]))
+
+
+#Función para calcular la trayectoria entre dos puntos mediante un perfil trapezoidal con N puntos
+def TrajRectDosPuntos(P_i,P_f,N):
+    td=np.zeros([N,4])
+    for i in range(4):
+        tg=rt.trapezoidal(P_i[i],P_f[i],N)
+        td[:,i]=tg.s
+    return td
+
+
+def CompletoPuntos(Puntos,N):
+    [r,c]=Puntos.shape
+    Trayectoria=np.zeros([r-1,N,c])
+    for i in range(r-1):
+        Pi=Puntos[i,:]
+        Pf=Puntos[i+1,:]
+        Trayectoria[i,:,:]=TrajRectDosPuntos(Pi,Pf,N)
+    Arreglo=Trayectoria[0,:,:]
+    for i in range(r-2):
+        Arreglo=np.concatenate((Arreglo,Trayectoria[i+1,:,:]), axis=0)
+    return Arreglo
+
 
 #Función que cambia valores de registros de los motores del Pincher.
 def jointCommand(command, id_num, addr_name, value, time):
@@ -78,6 +104,24 @@ def jointCommand(command, id_num, addr_name, value, time):
         return result.comm_result
     except rospy.ServiceException as exc:
         print(str(exc))
+
+def ActualizarRegistros(P_o):
+    for i in range(len(P_o)):
+        #jointCommand('', (i+1), 'Goal_Position', P_o[i], 0.05)
+        print(P_o)
+
+
+def RealizarRutina(Puntos,N):
+    PuntosTrayectoria=CompletoPuntos(Puntos,N)
+    C1=ConvPosArr2QArr(PuntosTrayectoria[:,:])
+    [r,c]=C1.shape
+    for i in range(r):
+        #print(ConvRad2An(C1[i,:],AngHomeRad[0:c]))
+        ActualizarRegistros(ConvRad2An(C1[i,:],AngHomeRad[0:c]))
+        time.sleep(0.1)
+
+
+
 
 #Función callback que se llama en el listener. Cambia la variable global de la posición de los ángulos de los motores.
 #Se realiza el ajuste a grados y a la posición home que se estableció
@@ -91,22 +135,16 @@ def listener():
     rospy.init_node('joint_listener', anonymous=True)
     rospy.Subscriber("/dynamixel_workbench/joint_states", JointState,callback)
 
-#Rutina de movimiento con puntos intermedios. Uno define el número de movimientos N para llegar a un punto.
-#Se ejecuta en un ciclo for hasta llegar al punto final.
-def movPartido(j,Goal,Actual):
-    N=5
-    delta=((Goal-Actual)/N)
-    for i in range(N):
-        jointCommand('', (j+1), 'Goal_Position', int(Actual+delta*(i+1)), 0.1)
-        time.sleep(0.1)
+
 
 def RutHome(PosHome):
     print('Ir a home\n')
-    for i in range(5):
+    for i in reversed(range(5)):
         jointCommand('', (i+1), 'Goal_Position', PosHome[i], 1)
         print('Moviento eslabon: '+str(i+1)+'\n')
         time.sleep(0.5)
     print('En home\n')
+
 
 #Función de impresión de opciones
 def PrintOpciones():
@@ -136,6 +174,8 @@ AngHomeRad=np.multiply(AngHomeGrad,np.pi/180)
 HomeS=np.array([0,0,0,0,0])
 HomeC=np.array([0,0,0,0,45])
 
+qHome=np.array(0.2,0,0.242,0)
+
 #Alturas Z en metros y ángulo de ataque
 Zpiso=0.095
 Zportaherramientas=0.1
@@ -148,8 +188,8 @@ PosAnHomeC=ConvGra2An(HomeC,AngHomeGrad)
 
 
 #Angulos de portaherramientas
-AngPortaHerramientasArriba=ikine4r(0.1,-0.2,Zseguridad,0)
-AngPortaHerramientasAbajo=ikine4r(0.1,-0.2,Zportaherramientas,0)
+qPortaHerramientasArriba=ikine4r(0.1,-0.2,Zseguridad,0)
+qPortaHerramientasAbajo=ikine4r(0.1,-0.2,Zportaherramientas,0)
 
 
 
@@ -197,56 +237,107 @@ if __name__ == '__main__':
 
         print("Bienvenido al laboratorio 5 de robótica!")
         print("Por favor espere a que el robot se dirija a home")
-        RutHome(PosHomeS)
+        RutHome(PosAnHomeS)
 
         PrintOpciones()
         caso=0
         while(caso!=8):
-            
             caso=int(input())
             if caso==1:
                 print("Se seleccionó: Cargar herramienta")
+                start_time = time.time()
+                
+                N=50
+                Puntos=np.zeros([3,4])
+                Puntos[0,:]=qHome
+                Puntos[1,:]=qPortaHerramientasArriba
+                Puntos[2,:]=qPortaHerramientasArriba
+                RealizarRutina(Puntos,N)
+
+                #Apretar el gripper
+                jointCommand('', 5, 'Goal_Position', 800, 0.05)
+                
+                Puntos=np.zeros([3,4])
+                Puntos[0,:]=qPortaHerramientasArriba
+                Puntos[1,:]=qPortaHerramientasArriba
+                Puntos[2,:]=qHome
+                RealizarRutina(Puntos,N)
 
 
-                time.sleep(0.5)
-                RutHome(PosHomeC)
+                end_time = time.time()
+                Tiempo=end_time-start_time
+                print("\ntiempo de ejecucion: %.2f s" % Tiempo)
+            
+
             elif caso==2:
                 print("Se seleccionó: Espacio de trabajo")
+                start_time = time.time()
 
 
-                time.sleep(0.5)
-                RutHome(PosHomeC)
+                
+                end_time = time.time()
+                Tiempo=end_time-start_time
+                print("\ntiempo de ejecucion: %.2f s" % Tiempo)
+
             elif caso==3:
                 print("Se seleccionó: Dibujo de Iniciales")
+                start_time = time.time()
 
 
-                time.sleep(0.5)
-                RutHome(PosHomeC)
+                
+                end_time = time.time()
+                Tiempo=end_time-start_time
+                print("\ntiempo de ejecucion: %.2f s" % Tiempo)
+
             elif caso==4:
                 print("Se seleccionó: Dibujo de figuras geométricas")
+                start_time = time.time()
 
 
-                time.sleep(0.5)
-                RutHome(PosHomeC)
+                
+                end_time = time.time()
+                Tiempo=end_time-start_time
+                print("\ntiempo de ejecucion: %.2f s" % Tiempo)
+
             elif caso==5:
                 print("Se seleccionó: Dibujo de puntos")
+                start_time = time.time()
 
 
-                time.sleep(0.5)
-                RutHome(PosHomeC)
+                
+                end_time = time.time()
+                Tiempo=end_time-start_time
+                print("\ntiempo de ejecucion: %.2f s" % Tiempo)
+
             elif caso==6:
                 print("Se seleccionó: Dibujo figura libre")
 
 
-                time.sleep(0.5)
-                RutHome(PosHomeC)
             elif caso==7:
                 print("Se seleccionó: Descarga de la herramienta")
+                start_time = time.time()
+                
+                N=50
+                Puntos=np.zeros([3,4])
+                Puntos[0,:]=qHome
+                Puntos[1,:]=qPortaHerramientasArriba
+                Puntos[2,:]=qPortaHerramientasArriba
+                RealizarRutina(Puntos,N)
+
+                #Apretar el gripper
+                jointCommand('', 5, 'Goal_Position', 512, 0.05)
+                
+                Puntos=np.zeros([3,4])
+                Puntos[0,:]=qPortaHerramientasArriba
+                Puntos[1,:]=qPortaHerramientasArriba
+                Puntos[2,:]=qHome
+                RealizarRutina(Puntos,N)
+
+                end_time = time.time()
+                Tiempo=end_time-start_time
+                print("\ntiempo de ejecucion: %.2f s" % Tiempo)
 
 
-
-                time.sleep(0.5)
-                RutHome(PosHomeS)
             elif caso==8:
                 print("Se seleccionó: Salr")
             else:
