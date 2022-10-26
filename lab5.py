@@ -195,6 +195,8 @@ qPortaHerramientasAbajo=ikine4r(0.1,-0.2,Zportaherramientas,0)
 
 #Angulos para arcos de espacio de trabajo diestro
 
+
+
 lim=70*np.pi/180
 AngArcMinIzq=ikine4r(0.168,0,Zpiso,0)
 AngArcMinIzq[0]=lim
