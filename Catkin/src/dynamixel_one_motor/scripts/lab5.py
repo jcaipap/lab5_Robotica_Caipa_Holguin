@@ -67,11 +67,20 @@ def fkine(theta_1,theta_2,theta_3,theta_4,theta_5):
     P_x=np.cos(theta_1)*(L_3*np.cos(theta_2 + theta_3) - L_2*np.sin(theta_2) + L_4*np.cos(theta_2 + theta_3 + theta_4))
     P_y=np.sin(theta_1)*(L_3*np.cos(theta_2 + theta_3) - L_2*np.sin(theta_2) + L_4*np.cos(theta_2 + theta_3 + theta_4))
     P_z=L_1 + L_3*np.sin(theta_2 + theta_3) + L_2*np.cos(theta_2) + L_4*np.sin(theta_2 + theta_3 + theta_4)
-    if theta_5>40*np.pi/180:
-        Grip=0
-    else:
+    if theta_5<-40*np.pi/180:
         Grip=1
-    return np.array([P_x,P_y,P_z,beta,Grip])
+    else:
+        Grip=0
+
+    print("Coordenadas:")
+    print('Pos X: '+"%.2f" % P_x+'°\tPos Y:'+"%.2f" % P_y+'°\tPos Z:'+"%.2f" % P_z+'°\tBeta:'+"%.2f" % beta)
+
+    if Grip==1:
+        print("\nEl gripper está cerrado\n")
+    else:
+        print("\nEl gripper está abierto\n")
+
+    #return np.array([P_x,P_y,P_z,beta,Grip])
 
 def ConvPosArr2QArr(PosArr):
     [r,c]=PosArr.shape
@@ -120,7 +129,8 @@ def joint_publisher(q,t):
     state.points.append(point)
     pub.publish(state)
     print('Cambio de punto q:')  
-    print(q) 
+
+    fkine(q[0],q[1],q[2],q[3],q[4])
     time.sleep(3*t)
 
 #Función que permite realizar la trayectoria a un punto Pos en un tiempo t. Los sleep se realizan para no saturar el bus de comunicaciones

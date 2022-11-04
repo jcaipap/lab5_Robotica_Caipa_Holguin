@@ -1,0 +1,1383 @@
+andres@andres-G3-3579:~/Downloads$ python3.9 lab5.py
+Bienvenido al laboratorio 5 de robótica!
+Por favor espere a que el robot se dirija a home
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.000	Pos Y:0.000	Pos Z:0.042	Beta:1.57 rads
+
+El gripper está abierto
+
+Seleccione la rutína a ejecutar:
+1:	Cargar herramienta
+2:	Espacio de trabajo
+3:	Dibujo de Iniciales
+4:	Dibujo de figuras geométricas
+5:	Dibujo de puntos
+6:	Dibujo figura libre
+7:	Descarga de la herramienta
+8:	Salr
+
+4
+La herramienta no está cargada
+
+
+Seleccione la rutína a ejecutar:
+1:	Cargar herramienta
+2:	Espacio de trabajo
+3:	Dibujo de Iniciales
+4:	Dibujo de figuras geométricas
+5:	Dibujo de puntos
+6:	Dibujo figura libre
+7:	Descarga de la herramienta
+8:	Salr
+
+1
+Se seleccionó: Cargar herramienta
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.016	Pos Y:-0.033	Pos Z:0.041	Beta:1.49 rads
+
+El gripper está abierto
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.001	Pos Y:0.001	Pos Z:0.043	Beta:1.57 rads
+
+El gripper está abierto
+
+
+Apretar gripper
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.001	Pos Y:0.001	Pos Z:0.043	Beta:1.57 rads
+
+El gripper está cerrado
+
+Volviendo a home
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.016	Pos Y:-0.033	Pos Z:0.041	Beta:1.49 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.000	Pos Y:0.000	Pos Z:0.042	Beta:1.57 rads
+
+El gripper está cerrado
+
+
+tiempo de ejecucion: 26.53 s
+
+
+Seleccione la rutína a ejecutar:
+1:	Cargar herramienta
+2:	Espacio de trabajo
+3:	Dibujo de Iniciales
+4:	Dibujo de figuras geométricas
+5:	Dibujo de puntos
+6:	Dibujo figura libre
+7:	Descarga de la herramienta
+8:	Salr
+2
+Se seleccionó: Espacio de trabajo
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.021	Pos Y:-0.058	Pos Z:0.047	Beta:1.57 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.012	Pos Y:-0.032	Pos Z:0.115	Beta:1.57 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.012	Pos Y:0.032	Pos Z:0.115	Beta:1.57 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.021	Pos Y:0.058	Pos Z:0.047	Beta:1.57 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.035	Pos Y:-0.097	Pos Z:-0.010	Beta:1.51 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.026	Pos Y:-0.071	Pos Z:-0.021	Beta:1.51 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.026	Pos Y:0.071	Pos Z:-0.021	Beta:1.51 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.041	Pos Y:0.112	Pos Z:-0.010	Beta:1.51 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.021	Pos Y:-0.058	Pos Z:0.047	Beta:1.57 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.000	Pos Y:0.000	Pos Z:0.042	Beta:1.57 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.000	Pos Y:0.000	Pos Z:0.042	Beta:1.57 rads
+
+El gripper está cerrado
+
+
+tiempo de ejecucion: 87.59 s
+
+
+Seleccione la rutína a ejecutar:
+1:	Cargar herramienta
+2:	Espacio de trabajo
+3:	Dibujo de Iniciales
+4:	Dibujo de figuras geométricas
+5:	Dibujo de puntos
+6:	Dibujo figura libre
+7:	Descarga de la herramienta
+8:	Salr
+
+
+3
+Se seleccionó: Dibujo de Iniciales
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.029	Pos Y:0.022	Pos Z:0.033	Beta:1.43 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.020	Pos Y:0.015	Pos Z:0.034	Beta:1.43 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.052	Pos Y:0.026	Pos Z:-0.005	Beta:1.41 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.003	Pos Y:0.001	Pos Z:0.062	Beta:1.42 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.023	Pos Y:0.012	Pos Z:0.032	Beta:1.41 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.033	Pos Y:0.020	Pos Z:0.017	Beta:1.42 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.047	Pos Y:0.029	Pos Z:0.022	Beta:1.42 rads
+
+El gripper está cerrado
+
+4Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.065	Pos Y:0.026	Pos Z:0.016	Beta:1.41 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.043	Pos Y:0.017	Pos Z:0.012	Beta:1.41 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.029	Pos Y:0.006	Pos Z:0.028	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.034	Pos Y:0.010	Pos Z:0.020	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.001	Pos Y:-0.000	Pos Z:0.072	Beta:1.41 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.004	Pos Y:0.002	Pos Z:0.061	Beta:1.42 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.003	Pos Y:0.002	Pos Z:0.050	Beta:1.41 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.000	Pos Y:0.000	Pos Z:0.042	Beta:1.57 rads
+
+El gripper está cerrado
+
+
+tiempo de ejecucion: 109.62 s
+
+
+Seleccione la rutína a ejecutar:
+1:	Cargar herramienta
+2:	Espacio de trabajo
+3:	Dibujo de Iniciales
+4:	Dibujo de figuras geométricas
+5:	Dibujo de puntos
+6:	Dibujo figura libre
+7:	Descarga de la herramienta
+8:	Salr
+
+4
+Se seleccionó: Dibujo de figuras geométricas
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.022	Pos Y:-0.000	Pos Z:0.059	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.004	Pos Y:-0.000	Pos Z:0.085	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.003	Pos Y:-0.001	Pos Z:0.079	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.020	Pos Y:0.002	Pos Z:0.039	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.007	Pos Y:-0.000	Pos Z:0.085	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.063	Pos Y:0.000	Pos Z:0.030	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.026	Pos Y:-0.003	Pos Z:0.031	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.025	Pos Y:-0.002	Pos Z:0.032	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.025	Pos Y:-0.002	Pos Z:0.033	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.023	Pos Y:-0.001	Pos Z:0.034	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.022	Pos Y:-0.001	Pos Z:0.036	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.020	Pos Y:-0.001	Pos Z:0.038	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.019	Pos Y:-0.001	Pos Z:0.040	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.017	Pos Y:-0.000	Pos Z:0.043	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.015	Pos Y:-0.000	Pos Z:0.046	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.012	Pos Y:-0.000	Pos Z:0.049	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.010	Pos Y:-0.000	Pos Z:0.052	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.008	Pos Y:-0.000	Pos Z:0.056	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.006	Pos Y:0.000	Pos Z:0.059	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.004	Pos Y:-0.000	Pos Z:0.062	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.002	Pos Y:-0.000	Pos Z:0.066	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.000	Pos Y:-0.000	Pos Z:0.069	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.001	Pos Y:0.000	Pos Z:0.072	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.002	Pos Y:0.000	Pos Z:0.074	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.004	Pos Y:0.000	Pos Z:0.077	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.004	Pos Y:0.000	Pos Z:0.079	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.005	Pos Y:0.000	Pos Z:0.081	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.006	Pos Y:0.000	Pos Z:0.082	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.006	Pos Y:0.001	Pos Z:0.083	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.006	Pos Y:0.001	Pos Z:0.084	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.006	Pos Y:0.001	Pos Z:0.084	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.006	Pos Y:0.001	Pos Z:0.083	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.005	Pos Y:0.001	Pos Z:0.083	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.005	Pos Y:0.001	Pos Z:0.081	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.004	Pos Y:0.001	Pos Z:0.080	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.003	Pos Y:0.001	Pos Z:0.077	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.002	Pos Y:0.000	Pos Z:0.075	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.001	Pos Y:0.000	Pos Z:0.072	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.000	Pos Y:-0.000	Pos Z:0.069	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.002	Pos Y:-0.000	Pos Z:0.066	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.004	Pos Y:-0.001	Pos Z:0.063	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.006	Pos Y:-0.001	Pos Z:0.060	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.008	Pos Y:-0.002	Pos Z:0.056	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.010	Pos Y:-0.002	Pos Z:0.053	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.012	Pos Y:-0.003	Pos Z:0.050	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.014	Pos Y:-0.003	Pos Z:0.047	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.016	Pos Y:-0.003	Pos Z:0.044	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.018	Pos Y:-0.003	Pos Z:0.041	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.020	Pos Y:-0.004	Pos Z:0.039	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.022	Pos Y:-0.004	Pos Z:0.036	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.023	Pos Y:-0.004	Pos Z:0.034	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.024	Pos Y:-0.004	Pos Z:0.033	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.025	Pos Y:-0.003	Pos Z:0.032	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.026	Pos Y:-0.003	Pos Z:0.031	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.026	Pos Y:-0.003	Pos Z:0.031	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.026	Pos Y:-0.003	Pos Z:0.031	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.000	Pos Y:0.000	Pos Z:0.042	Beta:1.57 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.015	Pos Y:0.004	Pos Z:0.057	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.004	Pos Y:0.001	Pos Z:0.079	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.005	Pos Y:-0.003	Pos Z:0.061	Beta:1.42 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.003	Pos Y:-0.002	Pos Z:0.050	Beta:1.41 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.028	Pos Y:-0.013	Pos Z:0.036	Beta:1.41 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.019	Pos Y:-0.009	Pos Z:0.038	Beta:1.41 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.008	Pos Y:-0.002	Pos Z:0.054	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.011	Pos Y:-0.003	Pos Z:0.046	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.042	Pos Y:-0.008	Pos Z:0.029	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.029	Pos Y:-0.006	Pos Z:0.028	Beta:1.40 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.042	Pos Y:-0.017	Pos Z:0.010	Beta:1.41 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.059	Pos Y:-0.024	Pos Z:0.016	Beta:1.41 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.000	Pos Y:0.000	Pos Z:0.042	Beta:1.57 rads
+
+El gripper está cerrado
+
+
+tiempo de ejecucion: 238.29 s
+
+
+Seleccione la rutína a ejecutar:
+1:	Cargar herramienta
+2:	Espacio de trabajo
+3:	Dibujo de Iniciales
+4:	Dibujo de figuras geométricas
+5:	Dibujo de puntos
+6:	Dibujo figura libre
+7:	Descarga de la herramienta
+8:	Salr
+
+
+5
+Se seleccionó: Dibujo de puntos
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.015	Pos Y:-0.010	Pos Z:0.043	Beta:1.42 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.009	Pos Y:-0.006	Pos Z:0.050	Beta:1.42 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.014	Pos Y:-0.009	Pos Z:0.044	Beta:1.42 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.023	Pos Y:-0.014	Pos Z:0.038	Beta:1.42 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.016	Pos Y:-0.010	Pos Z:0.041	Beta:1.42 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.023	Pos Y:-0.014	Pos Z:0.038	Beta:1.42 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.033	Pos Y:-0.019	Pos Z:0.031	Beta:1.42 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.024	Pos Y:-0.014	Pos Z:0.032	Beta:1.42 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.033	Pos Y:-0.019	Pos Z:0.031	Beta:1.42 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.044	Pos Y:-0.024	Pos Z:0.023	Beta:1.42 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.033	Pos Y:-0.018	Pos Z:0.022	Beta:1.42 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.044	Pos Y:-0.024	Pos Z:0.023	Beta:1.42 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.056	Pos Y:-0.029	Pos Z:0.015	Beta:1.42 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.044	Pos Y:-0.023	Pos Z:0.012	Beta:1.42 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.079	Pos Y:-0.041	Pos Z:0.015	Beta:1.42 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.000	Pos Y:0.000	Pos Z:0.042	Beta:1.57 rads
+
+El gripper está cerrado
+
+
+tiempo de ejecucion: 112.13 s
+
+
+Seleccione la rutína a ejecutar:
+1:	Cargar herramienta
+2:	Espacio de trabajo
+3:	Dibujo de Iniciales
+4:	Dibujo de figuras geométricas
+5:	Dibujo de puntos
+6:	Dibujo figura libre
+7:	Descarga de la herramienta
+8:	Salr
+
+
+6
+Se seleccionó: Dibujo figura libre
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.038	Pos Y:0.044	Pos Z:0.020	Beta:1.46 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.027	Pos Y:0.030	Pos Z:0.013	Beta:1.46 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.029	Pos Y:0.035	Pos Z:0.008	Beta:1.46 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.030	Pos Y:0.037	Pos Z:0.006	Beta:1.46 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.029	Pos Y:0.038	Pos Z:0.006	Beta:1.47 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.025	Pos Y:0.035	Pos Z:0.011	Beta:1.47 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.020	Pos Y:0.029	Pos Z:0.021	Beta:1.47 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.010	Pos Y:0.016	Pos Z:0.040	Beta:1.48 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.018	Pos Y:0.029	Pos Z:0.023	Beta:1.48 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.024	Pos Y:0.039	Pos Z:0.010	Beta:1.48 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.028	Pos Y:0.047	Pos Z:0.001	Beta:1.48 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.029	Pos Y:0.052	Pos Z:-0.005	Beta:1.49 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.029	Pos Y:0.054	Pos Z:-0.007	Beta:1.49 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.027	Pos Y:0.053	Pos Z:-0.005	Beta:1.49 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.024	Pos Y:0.049	Pos Z:0.000	Beta:1.50 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.020	Pos Y:0.044	Pos Z:0.008	Beta:1.50 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.017	Pos Y:0.036	Pos Z:0.016	Beta:1.50 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.013	Pos Y:0.029	Pos Z:0.026	Beta:1.50 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.010	Pos Y:0.021	Pos Z:0.035	Beta:1.50 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.007	Pos Y:0.014	Pos Z:0.044	Beta:1.49 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.007	Pos Y:0.013	Pos Z:0.045	Beta:1.49 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.006	Pos Y:0.013	Pos Z:0.046	Beta:1.50 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.004	Pos Y:0.010	Pos Z:0.050	Beta:1.50 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.003	Pos Y:0.007	Pos Z:0.056	Beta:1.51 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.001	Pos Y:0.002	Pos Z:0.062	Beta:1.51 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.001	Pos Y:-0.002	Pos Z:0.069	Beta:1.51 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.002	Pos Y:-0.005	Pos Z:0.075	Beta:1.51 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.003	Pos Y:-0.007	Pos Z:0.079	Beta:1.51 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.003	Pos Y:-0.008	Pos Z:0.082	Beta:1.50 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.003	Pos Y:-0.007	Pos Z:0.082	Beta:1.49 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.002	Pos Y:-0.005	Pos Z:0.078	Beta:1.49 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.000	Pos Y:0.001	Pos Z:0.068	Beta:1.48 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.002	Pos Y:0.003	Pos Z:0.064	Beta:1.48 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.002	Pos Y:-0.004	Pos Z:0.079	Beta:1.48 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.004	Pos Y:-0.007	Pos Z:0.087	Beta:1.48 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.006	Pos Y:-0.008	Pos Z:0.092	Beta:1.47 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.006	Pos Y:-0.008	Pos Z:0.094	Beta:1.47 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.006	Pos Y:-0.008	Pos Z:0.093	Beta:1.46 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.005	Pos Y:-0.006	Pos Z:0.089	Beta:1.46 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.004	Pos Y:-0.004	Pos Z:0.083	Beta:1.46 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.002	Pos Y:-0.002	Pos Z:0.077	Beta:1.46 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.001	Pos Y:0.001	Pos Z:0.069	Beta:1.46 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.003	Pos Y:0.004	Pos Z:0.062	Beta:1.46 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.005	Pos Y:0.007	Pos Z:0.055	Beta:1.47 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.007	Pos Y:0.010	Pos Z:0.050	Beta:1.47 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.008	Pos Y:0.010	Pos Z:0.049	Beta:1.46 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.011	Pos Y:0.013	Pos Z:0.043	Beta:1.46 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.015	Pos Y:0.016	Pos Z:0.036	Beta:1.46 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.019	Pos Y:0.021	Pos Z:0.028	Beta:1.45 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.023	Pos Y:0.026	Pos Z:0.020	Beta:1.45 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.027	Pos Y:0.030	Pos Z:0.013	Beta:1.46 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.038	Pos Y:0.044	Pos Z:0.020	Beta:1.46 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.000	Pos Y:0.000	Pos Z:0.042	Beta:1.57 rads
+
+El gripper está cerrado
+
+
+tiempo de ejecucion: 108.66 s
+
+
+Seleccione la rutína a ejecutar:
+1:	Cargar herramienta
+2:	Espacio de trabajo
+3:	Dibujo de Iniciales
+4:	Dibujo de figuras geométricas
+5:	Dibujo de puntos
+6:	Dibujo figura libre
+7:	Descarga de la herramienta
+8:	Salr
+
+
+7
+Se seleccionó: Descarga de la herramienta
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.016	Pos Y:-0.033	Pos Z:0.041	Beta:1.49 rads
+
+El gripper está cerrado
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.005	Pos Y:0.009	Pos Z:0.074	Beta:1.49 rads
+
+El gripper está cerrado
+
+
+Apretar gripper
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: -0.005	Pos Y:0.009	Pos Z:0.074	Beta:1.49 rads
+
+El gripper está abierto
+
+Volviendo a home
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.016	Pos Y:-0.033	Pos Z:0.041	Beta:1.49 rads
+
+El gripper está abierto
+
+Cambio de punto.
+
+Coordenadas en metros:
+Pos X: 0.000	Pos Y:0.000	Pos Z:0.042	Beta:1.57 rads
+
+El gripper está abierto
+
+
+tiempo de ejecucion: 28.02 s
+
+
+Seleccione la rutína a ejecutar:
+1:	Cargar herramienta
+2:	Espacio de trabajo
+3:	Dibujo de Iniciales
+4:	Dibujo de figuras geométricas
+5:	Dibujo de puntos
+6:	Dibujo figura libre
+7:	Descarga de la herramienta
+8:	Salr
+8
+Se seleccionó: Salr
+Finalizando rutinas
+
