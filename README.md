@@ -60,7 +60,7 @@ $r=\sqrt{P_x^2+P_y^2}$
 
 $D_r=r-L_4*cos(\beta)$
 
-Con todo y lo anterior, ya se pueden definir $\theta_2$ y $\theta_3$ como un 2R común, teniendo en cuenta la orientación inicial de sus eslabones, donde el offset de $\theta_2$ es de $90°$ y de $\theta_3$ es de $-90°$. Con todo y lo anterior, mediante simplificaciones geométricas y algebráicas, se puede establecer que:
+Con todo y lo anterior, ya se pueden definir $\theta_2$ y $\theta_3$ como un 2R común, teniendo en cuenta la orientación inicial de sus eslabones, donde el offset de $\theta_2$ es de $90°$ y de $\theta_3$ es de $-90°$. Con todo y lo anterior, mediante simplificaciones geométricas y algebráicas, se puede establecer que la solución codo arriba para este 2R es:
 
 
 ```math
@@ -208,11 +208,11 @@ posición de espera.
 
 Para la rutina de figura libre se realiza una rosa estilizada de cuatro pétalos la cual está definida por la ecuación
 
-$R^2=\sqrt{\abs{cos(2\theta)}}
+$R^2=|cos(2\theta)|$
 
 Se realiza un mapeo de N puntos (50 en el caso del video), y se descomponen en sus coordenadas $x$ y $y$ con centro en coordenadas $[125 200]mm$. Para los puntoz de $z$, se realiza un semejante a lo realizado para la circunferencia, donde va a ser descrito por la función:
 
-$z=Zpiso-0.005+0.01*cos(theta-\pi/2))$
+$z=Zpiso-0.005+0.01*cos(\theta-\pi/2)$
 
 Se realiza ese desfase de 90° debido a la orientación del robot. El Z debe ser máximo cuando sea su máxima elongación respecto a la base, lo cual sucede cercano a este desfase. De este modo, se tienen las 50 rutinas que se deben realizar para obtener la rosa. Esta rutina la antecede y precede un movimiento a una posición de seguridad para no empezar el contacto con el tablero de forma abrupta, y lo mismo de salida antes de dirigirse a home.
 
@@ -319,6 +319,38 @@ Tiempo=end_time-start_time #Se restan tiempos de finalizado e inicio
 print("\ntiempo de ejecucion: %.2f s" % Tiempo) #Se imprime en segundos la duración completa de esta rutina
 ```
 
+Ya mencionado el cómo se realizó, se van a mostrar los resultados de tiempos de ejecución con base al video y a la salida en consola que se tuvo la cual puede consultarse en el repositorio. 
+
+```
+Se seleccionó: Cargar herramienta
+tiempo de ejecucion: 26.53 s
+
+
+Se seleccionó: Espacio de trabajo
+tiempo de ejecucion: 87.59 s
+
+
+Se seleccionó: Dibujo de Iniciales
+tiempo de ejecucion: 109.62 s
+
+
+Se seleccionó: Dibujo de figuras geométricas
+tiempo de ejecucion: 238.29 s
+
+
+Se seleccionó: Dibujo de puntos
+tiempo de ejecucion: 112.13 s
+
+
+Se seleccionó: Dibujo figura libre
+tiempo de ejecucion: 108.66 s
+
+
+Se seleccionó: Descarga de la herramienta
+tiempo de ejecucion: 28.02 s
+
+```
+
 ## Demostraciones
 
 Ya se mencionó anteriormente, sin embargo se vuelve a anexar la posibilidad de dirigirse al video.
@@ -327,7 +359,7 @@ Ya se mencionó anteriormente, sin embargo se vuelve a anexar la posibilidad de 
 
 ## Verificación dimensional
 
-### Comparación con Matlab
+### Comparación cualitativa
 
 Ya teniendo todos los resultados, es posible comparar los trazos del marcador con lo que se tenía esperado mediante la gráfica resuelta en Matlab y ajustada a escala real. Dicho esto, la forma más facil es poder superponer los trazos del marcador con la gráfica, lo cual se va a mostrar a continuación:
 
@@ -340,11 +372,9 @@ Como se puede ver, el trazo que más se ajusta al teórico es el arco inferior. 
 
 Como se puede apreciar en esta comparación, se tiene una aproximación bastante buena en términos de dimensiones relativas de las letras, y la calidad de trazo va a depender en gran medida en la orientación del mismo, ya que es mucho más dificil para el pincher realizar trazos homogeneos en direcciones que requieran movimientos angulares de $\theta_1$ durante el trazo. Sin embargo, se considera que se obtuvieron resultados satisfactorios, considerando todos los errores que se presentaron durante el laboratorio.
 
-
 ![Comparación Figuras geométricas](https://github.com/aholguinr/lab5_Robotica_Caipa_Holguin/blob/main/Imagenes/Com%20Fig.png?raw=true)
 
 Para este caso se puede ver que el triángulo equilatero es bastante semejante al teórico, aunque con algunos desfases de dimensiones del mismo. El círculo tuvo bastantes problemas debido a las coordenadas Z quie variaban pero que lograban arreglar un poco este error de altura de dibujo. Como se puede ver, en la parte superior se trazó una recta hacia abajo, esto sucedió durante el movimiento de salida del marcador al finalizar la figura, y sucedió debido a que el pincher termina dependiendo bastante de la fuerza normal del marcador para sostenerse, motivo por el cual al intentarse salir de esta altura, el marcador alcanza a moverse y generar este trazo mientras se eleva el brazo. Por último, para las rectas paralelas se tienen algunos problemas de rectitud. Se ocasionaron debido a la dificultad de generar trazos rectos en esta dirección en específico, como ya se había explicado para las iniciales. Esto ocasionó que, apesar de tener tres líneas que se pueden considerar paralelas, estas están con baja rectitud a comparación de sus equivalentes teóricos. Sin embargo por nuestra parte nos sentimos satisfechos con este resultado debido a la dificultad que se tuvo para estas rectas.
-
 
 ![Comparación cinco puntos](https://github.com/aholguinr/lab5_Robotica_Caipa_Holguin/blob/main/Imagenes/Comp%20Puntos.png?raw=true)
 
@@ -354,9 +384,77 @@ Cabe aclarar que sí hubo un error bastante grande de desfase general de las coo
 
 Para finalizar, se puede realizar la comparación de la rosa de cuatro pétalos. A simple vista, se podría decir que la calidad de trazo no fue muy alta, ya que hay variaciones de tamaño y problemas de rectitur en los trazos entre los pétalos, sin embargo, teniendo en cuenta la complejidad que se tuvo para esta figura y sus coordenadas en Z, se considera que se intentó realizar de la mejor manera posible considerando todos los errores que se generaron con el pincher.
 
+
+Con todo y lo anterior, se puede establecer que el pincher logra generar las rutinas de manera adecuada, generando trazos de las dimensiones pedidas en programación, sin embargo, existe un offset asociado a dichos trazos, el cual es generado por todos los problemas que ya han sido mencionados en el pincher.
+
+
+### Comparación cuantitativa
+
+Ya hecha una comparación cualitativa de los resultados de las rutinas, es necesario asociar un valor al error asociado. Para esto, se realiza un mapeo de los puntos más relevantes en el tablero y se calculan las distancias entre su posición esperada y la obtenida.
+
+![Distancias entre valores reales y teóricos](ZELDA)
+
+Como se puede evidenciar, se escogieron en total 20 puntos, más que todo en la zona media del espacio de trabajo y cercana a su límite exterior, dado que esta es la región de mayor error. En la zona interna, como se puede apreciar por el arco interior, es casi nulo dicho error motivo por el cual no se le asigna tanta relevancia en el análisis de error.
+
+De este modo, se puede hacer un análisis estadístico a los resultados obtenidos.
+
+|      **Puntos**     | **Error (mm)** |
+|:--------------:|:-------------:|
+|        1       |     14,09     |
+|        2       |     13,66     |
+|        3       |      9,17     |
+|        4       |     10,22     |
+|        5       |     10,29     |
+|        6       |     10,08     |
+|        7       |      8,17     |
+|        8       |      12,3     |
+|        9       |      8,18     |
+|       10       |     11,14     |
+|       11       |     11,78     |
+|       12       |     11,23     |
+|       13       |      7,92     |
+|       14       |      6,41     |
+|       15       |     10,18     |
+|       16       |      8,17     |
+|       17       |     11,03     |
+|       18       |      7,42     |
+|       19       |     12,23     |
+|       20       |     19,26     |
+
+Como se evidencia en esta tabla, se tiene un errores máximos de $19.26$ mm y de $14.09$ mm, los cuales corresponden a los extremos del arco máximo. Dicho esto, es posible considerar estos datos como casos atípicos ya que solo son en estos extremos del trazo del arco. Para hacer un análisis más profundo, se van a tener en cuenta únicamente los puntos dentro del área de trabajo, ya que es donde más se va a estar utilizando el pincher en operaciones de trazado. Se obtiene la siguiente tabla:
+
+| **Puntos A Trabajo** | **Error (mm)** |
+|:--------------------:|:--------------:|
+|           2          |      13,66     |
+|           3          |      9,17      |
+|           4          |      10,22     |
+|           5          |      10,29     |
+|           6          |      10,08     |
+|           7          |      8,17      |
+|           8          |      12,30     |
+|           9          |      8,18      |
+|          10          |      11,14     |
+|          11          |      11,78     |
+|          12          |      11,23     |
+|          13          |      7,92      |
+|          14          |      6,41      |
+|          15          |      10,18     |
+|          16          |      8,17      |
+|          17          |      11,03     |
+|          18          |      7,42      |
+|          19          |      12,23     |
+|      **Minimo**      |    **6,41**    |
+|      **Maximo**      |    **13,66**   |
+|     **Promedio**     |    **9,98**    |
+|    **Desviación**    |    **1,91**    |
+
+
+Con todo y lo anterior, se puede establecer un error asociado al promedio de errores obtenidos teniendo en cuenta la desviación estandar de estos. Motivo por el cual, se va a determinar que el Pincher tiene un error de offset de $9.98\pm1.91$ mm.
+
+
 ### Repetición de rutinas
 
-Después de realizar diferentes pruebas, puntualmente antes de grabar el video final, se notaron muchas diferencias en el trazo. Muchas tienen que ver con la posición del marcador a la hora del agarre. Debido a que el marcador se encuentra relativamente suelto en su base, es muy facil que este se mueva de una posición deseada, motivo por el cual el agarre del gripper va a ser diferente cada vez. Esto genera diferencias en los trazos más que todo por el ángulo de ataque y a la altura a la que se termina apretando efectivamente el marcador. Se van a mostrar algunos de los ejemplos de casos anteriores para mostrar las grandes diferencias que se tuvieron, teniendo en cuenta que las coordenadas de dibujo eran las mismas entre trazos.
+Para finalizar, se va a hacer mención de los cambios obtenidos al repetir rutinas. Después de realizar diferentes pruebas, puntualmente antes de grabar el video final, se notaron muchas diferencias en el trazo. Muchas tienen que ver con la posición del marcador a la hora del agarre. Debido a que el marcador se encuentra relativamente suelto en su base, es muy fácil que este se mueva de la posición deseada, motivo por el cual el agarre del gripper va a ser diferente cada vez. Esto genera diferencias en los trazos más que todo por el ángulo de ataque y a la altura a la que se termina apretando efectivamente el marcador. Se van a mostrar algunos de los ejemplos de casos anteriores para mostrar las grandes diferencias que se tuvieron, teniendo en cuenta que las coordenadas de dibujo eran las mismas entre trazos.
 
 ![Prueba 2](https://github.com/aholguinr/lab5_Robotica_Caipa_Holguin/blob/main/Imagenes/prueba%202.jpg?raw=true)
 En este caso no se logró cubrir totalmente el arco exterior, más que todo porque el marcador fue sujetado muy abajo y no tenía la suficiente altura para tocar en todo momento en la rutina del arco exterior.
