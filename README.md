@@ -355,7 +355,7 @@ tiempo de ejecucion: 28.02 s
 
 Ya se mencionó anteriormente, sin embargo se vuelve a anexar la posibilidad de dirigirse al video.
 
-[![video](https://i9.ytimg.com/vi/urgtAmz2foA/mqdefault.jpg?sqp=CNzNkpsG-oaymwEmCMACELQB8quKqQMa8AEB-AGUA4AC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLDlZFS71zX3vXsmWUqZGh1yUeY7oA)](https://youtu.be/urgtAmz2foA)
+[![video](https://raw.githubusercontent.com/aholguinr/lab5_Robotica_Caipa_Holguin/main/Imagenes/thumbnail.png)](https://youtu.be/urgtAmz2foA)
 
 ## Verificación dimensional
 
