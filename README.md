@@ -136,7 +136,7 @@ Ahora bien, debido a las limitaciones de torque y rigidez del Pincher, se determ
 
 Para la parte de rutinas y de operación del Pincher se realiza un único script en Python y desde ahí se realizan todas las operaciones. En el video se muestra todo el procedimiento. A continuación puede ver el video que se realizó en la ejecución de todas las funcionalidades requeridas para el laboratorio.
 
-[![video](https://i9.ytimg.com/vi/urgtAmz2foA/mqdefault.jpg?sqp=CNzNkpsG-oaymwEmCMACELQB8quKqQMa8AEB-AGUA4AC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLDlZFS71zX3vXsmWUqZGh1yUeY7oA)](https://youtu.be/urgtAmz2foA)
+[![video]([https://i9.ytimg.com/vi/urgtAmz2foA/mqdefault.jpg?sqp=CNzNkpsG-oaymwEmCMACELQB8quKqQMa8AEB-AGUA4AC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLDlZFS71zX3vXsmWUqZGh1yUeY7oA](https://github.com/aholguinr/lab5_Robotica_Caipa_Holguin/blob/main/Imagenes/thumbnail.png?raw=true))](https://youtu.be/urgtAmz2foA)
 
 Además, en el repositorio se encuentra el archivo de Python donde también se comenta una breve explicación de todas las rutinas que se realizaron y demás instancias del archivo. [Click aquí para dirigirse al archivo Lab5.py](https://github.com/aholguinr/lab5_Robotica_Caipa_Holguin/blob/main/Catkin/src/dynamixel_one_motor/scripts/lab5.py)
 
